@@ -1,0 +1,114 @@
+# Git ignore para projetos VHDL
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs / editores
+.vscode/
+.idea/
+*.sublime-*
+*.sw?
+*~ 
+
+# Pastas de build / simulação / trabalho
+build/
+sim/
+simv/
+isim/
+work/
+work-*/
+xsim.dir/
+xsim/
+*.runs/
+_run/
+.rundir/
+
+# ModelSim / Questa
+modelsim.ini
+modelsim.ini.*
+vsim.wlf
+*.wlf
+*.do
+*.log
+*.mpc
+*.wdb
+
+# GHDL
+*.cf
+*.o
+*.exe
+*.ghw
+*.ghw.*
+*.stackdump
+
+# Vivado / Xilinx
+*.jou
+*.log
+*.ltx
+*.pb
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+.ip_user_files/
+export/
+*.xpr
+*.xdc
+*.bit
+*.bin
+*.rbt
+*.fpg
+*.hwdef
+*.backup
+
+# Quartus / Intel
+db/
+incremental_db/
+db_backup/
+*.qpf
+*.qsf
+*.qws
+*.sof
+*.rbf
+*.pof
+*.jdi
+*.qar
+*.qdb
+*.qip
+
+# Arquivos gerados (netlists, bitstreams, relatórios)
+*.edf
+*.ngc
+*.ngd
+*.ncd
+*.map
+*.bit
+*.mcs
+*.svf
+*.asc
+*.jed
+*.rpt
+*.syr
+
+# Testbenches / artefatos temporários gerados
+*_tb.*
+*_tb.vhd
+*_tb.sv
+*_synth.*
+*_pb.*
+
+# Backups / temporários
+*.bak
+*.tmp
+*.old
+*.retry
+
+# Tags / editor swap
+tags
+ctags
+*.swp
+
+# Não versionar chaves privadas (se houver)
+*.key
+*.pem
