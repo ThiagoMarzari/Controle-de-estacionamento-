@@ -12,7 +12,15 @@ O projeto consiste em um sistema digital de controle de estacionamento implement
 
 ## 🔄 Diagrama de Estados e Descrição da FSM
 
-O sistema não utiliza uma máquina de estados finitos (FSM) explícita com múltiplos estados, mas sim um **contador síncrono** que gerencia as vagas disponíveis. O funcionamento pode ser descrito como:
+O sistema utiliza uma máquina de estados finitos (FSM) com três estados principais que gerenciam o fluxo de veículos no estacionamento:
+
+![Diagrama de Estados da FSM](diagrama.png)
+
+### Estados da FSM:
+
+1. **Esperando**: Estado inicial onde o sistema aguarda a ativação dos sensores
+2. **Entrada**: Estado acionado quando um veículo entra (sensor_entrada = 1 e vagas > 0)
+3. **Saída**: Estado acionado quando um veículo sai (sensor_saida = 1)
 
 ### Lógica de Operação:
 
